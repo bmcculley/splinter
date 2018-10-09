@@ -304,7 +304,7 @@ class BaseWebDriver(DriverAPI):
     def get_alert(self):
         try:
             return AlertElement(self.driver.switch_to_alert())
-       except NoAlertPresentException: 
+        except NoAlertPresentException:
             return False
 
     def is_text_present(self, text, wait_time=None):
